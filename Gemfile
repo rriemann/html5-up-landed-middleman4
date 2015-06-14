@@ -13,11 +13,10 @@ gem 'middleman', '~> 4.0.0.beta.1'
 gem 'middleman-livereload'
 
 
-gem 'middleman-dotenv'
-gem 'middleman-minify-html'
-gem 'middleman-imageoptim'
 gem 'middleman-jquery'
-gem 'font-awesome-middleman', '~> 4.2.3'
+gem 'font-awesome-sass', require: false
+
+gem 'slim'
 
 source 'https://rails-assets.org' do
   gem 'rails-assets-mapbox.js', '~> 2.1.9', require: false

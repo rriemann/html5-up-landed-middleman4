@@ -3,6 +3,9 @@ set :js_dir,                'js'
 set :images_dir,            'img'
 set :fonts_dir,             'fonts'
 
+# Slim template engine
+require 'slim'
+
 ###
 # Page options, layouts, aliases and proxies
 ###
@@ -29,9 +32,6 @@ page '/*.txt', layout: false
 configure :development do
   activate :livereload
 end
-
-# get api keys from ".env" file
-activate :dotenv
 
 # Methods defined in the helpers block are available in templates
 # helpers do
