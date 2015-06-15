@@ -159,7 +159,7 @@ PLATFORMS
 
 DEPENDENCIES
   font-awesome-sass
-  middleman (~> 4.0.0.beta.1)
+  middleman (~> 4.0.0.beta.2)
   middleman-jquery
   middleman-livereload
   rails-assets-Hover (~> 1.0.9)!
@@ -174,3 +174,6 @@ DEPENDENCIES
   slim
   tzinfo-data
   wdm (~> 0.1.0)
+
+BUNDLED WITH
+   1.10.3
