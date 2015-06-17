@@ -9,7 +9,8 @@ gem 'wdm', '~> 0.1.0', platforms: [:mswin, :mingw]
 gem 'tzinfo-data', platforms: [:mswin, :mingw, :jruby]
 
 # Middleman Gems
-gem 'middleman', '~> 4.0.0.beta.2'
+# gem 'middleman', '~> 4.0.0.beta.2'
+gem 'middleman', :git => 'https://github.com/middleman/middleman.git', :branch => 'master'
 gem 'middleman-livereload'
 
 
