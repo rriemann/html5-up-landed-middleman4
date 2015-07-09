@@ -1,3 +1,6 @@
+This is the version ported to middleman:
+http://middlemanapp.com/
+
 Landed by HTML5 UP
 html5up.net | @n33co
 Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
@@ -22,6 +25,9 @@ n33.co @n33co dribbble.com/n33
 
 
 Credits:
+
+        Adaption to Middleman:
+                Robert Riemann (@rriemann_eu, http://blog.riemann.cc/about)
 
 	Demo Images:
 		Unsplash (unsplash.com)

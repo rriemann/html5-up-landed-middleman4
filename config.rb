@@ -6,6 +6,9 @@ set :fonts_dir,             'fonts'
 # Slim template engine
 require 'slim'
 
+# explicit require of sass as suggested by 'tilt'
+require 'sass'
+
 ###
 # Page options, layouts, aliases and proxies
 ###
@@ -43,8 +46,14 @@ end
 # Build-specific configuration
 configure :build do
   # Minify CSS on build
-  # activate :minify_css
+  activate :minify_css
 
   # Minify Javascript on build
-  # activate :minify_javascript
+  activate :minify_javascript
+end
+
+# work-around to remove copies of font-awesome files. Where are they pulled in?
+after_build do |builder|
+  build_dir = config[:build_dir]
+  Dir.glob(build_dir + '/fonts/*wesome*').each { |f| File.delete(f) if File.file? f }
 end
