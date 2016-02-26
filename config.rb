@@ -1,13 +1,15 @@
 set :css_dir,               'css'
 set :js_dir,                'js'
 set :images_dir,            'img'
-set :fonts_dir,             'fonts'
+set :fonts_dir,             'assets'
 
 # Slim template engine
 require 'slim'
 
 # explicit require of sass as suggested by 'tilt'
 require 'sass'
+
+require 'font-awesome-sass'
 
 ###
 # Page options, layouts, aliases and proxies

@@ -9,24 +9,25 @@ gem 'wdm', '~> 0.1.0', platforms: [:mswin, :mingw]
 gem 'tzinfo-data', platforms: [:mswin, :mingw, :jruby]
 
 # Middleman Gems
-# gem 'middleman', '~> 4.0.0.beta.2'
-gem 'middleman', :git => 'https://github.com/middleman/middleman.git', :branch => 'master'
+gem 'middleman', '~> 4.1.1'
+gem 'middleman-compass', '>= 4.0.1'
+gem 'middleman-sprockets', '~> 4.0.0.rc'
 gem 'middleman-livereload'
 
 
 gem 'middleman-jquery'
-gem 'font-awesome-sass', require: false
+gem 'font-awesome-sass', '~> 4.5.0'
 
 gem 'slim'
 
 source 'https://rails-assets.org' do
   gem 'rails-assets-mapbox.js', '~> 2.1.9', require: false
-  
+
   gem 'rails-assets-jquery.scrollex', require: false
-  gem 'rails-assets-skel', '~> 3.0.0.dev', require: false
+  gem 'rails-assets-skel', '~> 3.0.0.dev'
   gem 'rails-assets-html5shiv', '~> 3.6.2', require: false
   gem 'rails-assets-respond', require: false
-  
+
   gem 'rails-assets-jquery.easing', '~> 1.3.1', require: false
   gem 'rails-assets-Hover', '~> 1.0.9', require: false
   gem 'rails-assets-formstone', '~> 0.6.1', require: false
