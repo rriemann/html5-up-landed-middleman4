@@ -53,9 +53,3 @@ configure :build do
   # Minify Javascript on build
   activate :minify_javascript
 end
-
-# work-around to remove copies of font-awesome files. Where are they pulled in?
-after_build do |builder|
-  build_dir = config[:build_dir]
-  Dir.glob(build_dir + '/fonts/*wesome*').each { |f| File.delete(f) if File.file? f }
-end
